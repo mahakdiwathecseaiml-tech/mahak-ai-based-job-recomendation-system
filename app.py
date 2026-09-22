@@ -13,7 +13,7 @@ BASE=Path(__file__).parent
 USERS=BASE/'users.csv'; JOBS=BASE/'dataset'/'jobs.xlsx'
 
 
-def seed-data():
+def seed_data():
     if os.path.exists():
         return
 
