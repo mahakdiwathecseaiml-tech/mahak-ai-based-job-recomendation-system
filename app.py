@@ -2,6 +2,7 @@ import hashlib, re
 from pathlib import Path
 import pandas as pd
 import streamlit as st
+import os
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pdfplumber
@@ -12,10 +13,11 @@ BASE=Path(__file__).parent
 USERS=BASE/'users.csv'; JOBS=BASE/'dataset'/'jobs.xlsx'
 
 
-def seed_data():
-    if not USERS.exists():
-        pd.DataFrame([{'username':'demo','password_hash':sha('demo123'),'name':'Demo User'}]).to_csv(USERS,index=False)
-    if not JOBS.exists():
+def seed-data():
+    if os.path.exists():
+        return
+
+        os.makedirs(os.path.dirname(JOBS),exist-ok=True)
         rows=[
         ['Python Developer','Tech Solutions','Nagpur','Python, Pandas, NumPy, Scikit-learn, SQL, Flask, Git','BTech CSE','0-2 years','Develop Python applications and APIs.'],
         ['Machine Learning Engineer','InnovateAI','Remote','Python, Machine Learning, TensorFlow, Pandas, SQL','BTech CSE AIML','2-5 years','Build and evaluate machine learning pipelines.'],
