@@ -17,7 +17,7 @@ def seed_data():
     if os.path.exists():
         return
 
-        os.makedirs(os.path.dirname(JOBS),exist-ok=True)
+        os.makedirs(os.path.dirname(JOBS),exist_ok=True)
         rows=[
         ['Python Developer','Tech Solutions','Nagpur','Python, Pandas, NumPy, Scikit-learn, SQL, Flask, Git','BTech CSE','0-2 years','Develop Python applications and APIs.'],
         ['Machine Learning Engineer','InnovateAI','Remote','Python, Machine Learning, TensorFlow, Pandas, SQL','BTech CSE AIML','2-5 years','Build and evaluate machine learning pipelines.'],
