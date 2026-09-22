@@ -14,7 +14,7 @@ USERS=BASE/'users.csv'; JOBS=BASE/'dataset'/'jobs.xlsx'
 
 
 def seed_data():
-    if os.path.exists():
+    if os.path.exists(JOBS):
         return
 
         os.makedirs(os.path.dirname(JOBS),exist_ok=True)
