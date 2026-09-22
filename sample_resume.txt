@@ -1,0 +1,1 @@
+B.Tech CSE AIML student with Python, SQL, Pandas, NumPy, Scikit-learn, Machine Learning, NLP and Git skills. Built an AI job recommendation project using TF-IDF and cosine similarity. Interested in AI, data science and backend development.

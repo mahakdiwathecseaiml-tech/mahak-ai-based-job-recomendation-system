@@ -1,0 +1,5 @@
+[
+  "tests/test_model.py::test_clean_lowercases_and_normalizes",
+  "tests/test_model.py::test_recommendation_output",
+  "tests/test_model.py::test_skill_extraction"
+]
